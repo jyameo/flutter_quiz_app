@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_quiz_app/models/models.dart';
 import 'package:flutter_quiz_app/screens/screens.dart';
 import 'package:flutter_quiz_app/services/services.dart';
 import 'package:provider/provider.dart';
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        StreamProvider<FirebaseUser>.value(value: AuthService().user)
+        StreamProvider<FirebaseUser>.value(value: AuthService().user),
+        StreamProvider<Report>.value(value: Global.reportRef.documentStream)
       ],
       child: MaterialApp(
         //Named Routes
