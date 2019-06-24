@@ -20,10 +20,10 @@ class MyApp extends StatelessWidget {
         //Named Routes
         routes: {
           '/': (context) => LoginScreen(),
+          '/home': (context) => HomeScreen(),
           '/topics': (context) => TopicScreen(),
           '/profile': (context) => ProfileScreen(),
           '/about': (context) => AboutScreen(),
-          '/home': (context) => HomeScreen(),
         },
 
         // Theme

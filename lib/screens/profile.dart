@@ -9,7 +9,7 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepOrange,
-        title: Text('profile'),
+        title: Text('Profile'),
       ),
       body: Center(
         child: FlatButton(
