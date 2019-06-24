@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz_app/services/services.dart';
-import 'package:flutter_quiz_app/sharedUI/shared.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import 'sharedUI/shared.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -16,7 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
     super.initState();
     auth.getUser.then((user) {
       if (user != null) {
-        Navigator.pushReplacementNamed(context, '/topics');
+        Navigator.pushReplacementNamed(context, '/home');
       }
     });
   }
