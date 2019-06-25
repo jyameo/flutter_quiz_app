@@ -4,7 +4,12 @@ import 'package:flutter_quiz_app/services/services.dart';
 
 import 'sharedUI/shared.dart';
 
-class TopicScreen extends StatelessWidget {
+class TopicScreen extends StatefulWidget {
+  @override
+  _TopicScreenState createState() => _TopicScreenState();
+}
+
+class _TopicScreenState extends State<TopicScreen> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -15,7 +20,7 @@ class TopicScreen extends StatelessWidget {
             return Scaffold(
               appBar: AppBar(
                 title: Text('Topics'),
-                backgroundColor: Colors.purple,
+                backgroundColor: Colors.deepPurple,
               ),
               drawer: TopicDrawer(topics: topics),
               body: GridView.count(
@@ -32,38 +37,5 @@ class TopicScreen extends StatelessWidget {
             return LoadingScreen();
           }
         });
-  }
-}
-
-class TopicDrawer extends StatelessWidget {
-  final List<Topic> topics;
-//TODO
-  const TopicDrawer({Key key, this.topics}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-class TopicProgress extends StatelessWidget {
-  //TODO
-  final Topic topic;
-
-  const TopicProgress({Key key, this.topic}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-class QuizBadge extends StatelessWidget {
-  // TODO
-  final Topic topic;
-  final String id;
-
-  const QuizBadge({Key key, this.topic, this.id}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }

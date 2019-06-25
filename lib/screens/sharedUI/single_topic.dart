@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz_app/models/models.dart';
 import 'package:flutter_quiz_app/screens/screens.dart';
+import 'shared.dart';
 
 class SingleTopicDisplay extends StatelessWidget {
   final Topic topic;
