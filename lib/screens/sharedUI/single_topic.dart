@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz_app/models/models.dart';
 import 'package:flutter_quiz_app/screens/screens.dart';
+
 import 'shared.dart';
 
 class SingleTopicDisplay extends StatelessWidget {
@@ -25,7 +26,7 @@ class SingleTopicDisplay extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Image.asset('{assets/covers/$topic.img}',
+                  Image.asset('assets/covers/${topic.img}',
                       fit: BoxFit.contain),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

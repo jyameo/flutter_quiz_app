@@ -18,7 +18,7 @@ class TopicDetailScreen extends StatelessWidget {
           Hero(
               tag: topic.img,
               child: Image.asset(
-                '{assets/covers/$topic.img}',
+                'assets/covers/${topic.img}',
                 width: MediaQuery.of(context).size.width,
               )),
           Text(
