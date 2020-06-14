@@ -1,4 +1,4 @@
 # flutter_quiz_app
 
-Production ready quiz application
+Production ready quiz application for Android and iOS
 
